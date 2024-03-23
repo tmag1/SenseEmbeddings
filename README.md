@@ -10,4 +10,5 @@ Additionally, vectors were downloaded from [this dataset](https://figshare.com/a
 
 Notes:
 
--
+- This hugging face model seems to be the best solution to inserting punctutation. Nltk doesn't have functionality for inserting punctuation. I experimented with different hugging face models and this one has the highest accuracy. [This one](https://huggingface.co/felflare/bert-restore-punctuation) is also pretty good (a little worse than currently used one) but I was having dependency issues when trying to get it to work. You can also use GPT to insert punctuation but I would have to find a solution for ensuring words aren't deleted or added.
+- The generate_sense_embedding function now also returns a dictionary that contains non-stop words that don't have sense embeddings and how often they appear in the given text. It also returns a list of sentences so you can review how punctuation was inserted and how the original text was split into sentneces based on the inserted punctuation.
