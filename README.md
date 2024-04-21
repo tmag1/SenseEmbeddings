@@ -9,8 +9,13 @@ The included notebook utilizes code from the following sources:
 Additionally, vectors were downloaded from [this dataset](https://figshare.com/articles/dataset/LMMS-SP_ALBERT-XXLARGE/21975773?file=38999423) on figshare. Specifically, the file used is 'lmms-sp-wsd.albert-xxlarge-v2.vectors.txt'.
 
 Update notes(04/15):
+
+- added program to generate syntactically similar sentences.
+
+Update notes(04/15):
+
 - I was having trouble running the full script for syntax embeddings but I wrote a function that takes in a sentence and a list of next words and return the most likely word if it is in the list of possibilities
-- I started writing code for a siamese model approach, the issue right now is that I have to come up with a way to define syntactic similarity using the dependency and pos tags that will make sure there is a minimum overlap for tag of at least 2. 
+- I started writing code for a siamese model approach, the issue right now is that I have to come up with a way to define syntactic similarity using the dependency and pos tags that will make sure there is a minimum overlap for tag of at least 2.
 
 Update Notes:
 
